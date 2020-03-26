@@ -1,0 +1,18 @@
+Hello my name is {{ full_name }}.
+I am {{ age }} years old.
+I am {{ height }} tall.
+My Sister is called {{ family['siblings'] }}
+My Dad is called {{  family['dad'] }}
+My Mum is called {{  family['mum'] }}
+{% if likes %}
+    {% for things in likes %}
+I like {{ things }}
+    {% endfor %}
+{%  endif %}
+However....
+{%  if dislikes %}
+    {% for things in dislikes %}
+I dislike {{ things }}
+    {% endfor %}
+{%  endif %}
+
